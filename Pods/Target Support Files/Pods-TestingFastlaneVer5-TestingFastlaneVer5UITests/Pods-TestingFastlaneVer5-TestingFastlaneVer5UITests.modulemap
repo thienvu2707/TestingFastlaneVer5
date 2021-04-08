@@ -1,0 +1,6 @@
+framework module Pods_TestingFastlaneVer5_TestingFastlaneVer5UITests {
+  umbrella header "Pods-TestingFastlaneVer5-TestingFastlaneVer5UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

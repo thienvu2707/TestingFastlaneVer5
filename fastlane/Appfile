@@ -1,0 +1,8 @@
+app_identifier("com.gumi.TestingFastlaneVer5") # The bundle identifier of your app
+apple_id("gumi-ios-developer@gumiviet.com") # Your Apple email address
+
+itc_team_id("120726664") # App Store Connect Team ID
+team_id("SKP2278HX7") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

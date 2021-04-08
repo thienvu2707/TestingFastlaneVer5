@@ -1,0 +1,39 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    build_app(scheme: "TestingFastlaneVer5")
+    upload_to_testflight
+  end
+
+desc "Firebase Distribution"
+  lane :firebase_distribution do
+     build_app(scheme: "TestingFastlaneVer5",
+	workspace: "TestingFastlaneVer5.xcworkspace",
+             include_bitcode: true,
+             export_method: "development"
+    )
+             
+     firebase_app_distribution(
+             app: "1:550321097015:ios:8a556c3763706d3223b2b2",
+             firebase_cli_token: "1//0eKKMr1vpMTMBCgYIARAAGA4SNwF-L9Iru-p1RJRlwSxFYJqlE4ddai9vVqou4zRLwPBOGqS87x4ZkeXwep_fzvkK1wQg5xtlow4",
+             testers: "vule@gumiviet.com",
+             release_notes: "Lots of amazing new features to test out!")
+  end
+end
