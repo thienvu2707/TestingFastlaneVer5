@@ -27,7 +27,12 @@ desc "Firebase Distribution"
      build_app(scheme: "TestingFastlaneVer5",
 	workspace: "TestingFastlaneVer5.xcworkspace",
              include_bitcode: true,
-             export_method: "development"
+             export_method: "development",
+	    export_options: {
+                provisioningProfiles: {
+                    "com.gumi.TestingFastlaneVer5" => "TestingFastlaneVer5",
+                }
+            }
     )
              
      firebase_app_distribution(
