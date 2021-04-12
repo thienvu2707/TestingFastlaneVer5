@@ -18,15 +18,15 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    build_app(scheme: "TestingFastlaneVer5")
+    build_app(scheme: "TestingFastlaneVer5"")
     upload_to_testflight
   end
 
 desc "Firebase Distribution"
   lane :firebase_distribution do
-	setupCodeSigning(ENV["MATCH_PASSWORD"], ENV["CERTIFICATE_PASSWORD"], '/Users/thienvule/XCode/TestingFastlaneVer5/FirebaseService/TestingFastlaneVer5.mobileprovision', '/Users/thienvule/XCode/TestingFastlaneVer5/FirebaseService/ThienVuLePrivateKeyVer2.p12')
      build_app(scheme: "TestingFastlaneVer5",
 	workspace: "TestingFastlaneVer5.xcworkspace",
+	xcargs: "-allowProvisioningUpdates,
              include_bitcode: true,
              export_method: "development"
     )
@@ -38,21 +38,4 @@ desc "Firebase Distribution"
              release_notes: "Lots of amazing new features to test out!")
   end
 end
-
-def setupCodeSigning(keychainPassword, certificatePassword, profilePath, certificatePath)
-  create_keychain(
-    name: "CI",
-    password: keychainPassword,
-    default_keychain: true,
-    unlock: true,
-    timeout: 3600,
-    lock_when_sleeps: false
-  )
-  install_provisioning_profile(path: profilePath)
-  import_certificate(
-    certificate_path: certificatePath,
-    certificate_password: certificatePassword,
-    keychain_name: "CI",
-    keychain_password: keychainPassword
-  )
 end
