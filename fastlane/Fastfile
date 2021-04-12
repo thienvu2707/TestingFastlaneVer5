@@ -26,7 +26,7 @@ desc "Firebase Distribution"
   lane :firebase_distribution do
      build_app(scheme: "TestingFastlaneVer5",
 	workspace: "TestingFastlaneVer5.xcworkspace",
-	xcargs: "-allowProvisioningUpdates,
+	xcargs: "-allowProvisioningUpdates",
              include_bitcode: true,
              export_method: "development"
     )
