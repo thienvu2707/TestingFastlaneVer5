@@ -7,14 +7,4 @@ target 'TestingFastlaneVer5' do
 
   # Pods for TestingFastlaneVer5
 	pod 'Firebase/Analytics'
-
-  target 'TestingFastlaneVer5Tests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'TestingFastlaneVer5UITests' do
-    # Pods for testing
-  end
-
 end
