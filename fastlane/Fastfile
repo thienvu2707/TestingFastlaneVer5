@@ -24,11 +24,11 @@ platform :ios do
 
 desc "Firebase Distribution"
   lane :firebase_distribution do
-	sigh(
-		development: true,
-      		team_id: "SKP2278HX7",
-      		provisioning_name: "TestingFastlaneVer5"
-    	)	
+	#sigh(
+	#	development: true,
+      	#	team_id: "SKP2278HX7",
+      	#	provisioning_name: "TestingFastlaneVer5"
+    	#)	
 
 	disable_automatic_code_signing(
   		path: "/Users/thienvule/XCode/TestingFastlaneVer5/TestingFastlaneVer5.xcodeproj",
