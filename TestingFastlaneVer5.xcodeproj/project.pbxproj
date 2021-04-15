@@ -195,13 +195,19 @@
 				TargetAttributes = {
 					725898B6261DAD13008BEE9E = {
 						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = SKP2278HX7;
+						ProvisioningStyle = Manual;
 					};
 					725898CC261DAD15008BEE9E = {
 						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = SKP2278HX7;
+						ProvisioningStyle = Manual;
 						TestTargetID = 725898B6261DAD13008BEE9E;
 					};
 					725898D7261DAD15008BEE9E = {
 						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = SKP2278HX7;
+						ProvisioningStyle = Manual;
 						TestTargetID = 725898B6261DAD13008BEE9E;
 					};
 				};
@@ -444,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.5;
+				MARKETING_VERSION = 0.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gumi.TestingFastlaneVer5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = TestingFastlaneVer5;
@@ -466,7 +472,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.5;
+				MARKETING_VERSION = 0.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gumi.TestingFastlaneVer5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = TestingFastlaneVer5;
@@ -480,8 +486,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XDZFDRJ434;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SKP2278HX7;
 				INFOPLIST_FILE = TestingFastlaneVer5Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,6 +497,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gumi.TestingFastlaneVer5Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TestingFastlaneVer5;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingFastlaneVer5.app/TestingFastlaneVer5";
@@ -502,8 +509,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XDZFDRJ434;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SKP2278HX7;
 				INFOPLIST_FILE = TestingFastlaneVer5Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,6 +520,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gumi.TestingFastlaneVer5Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TestingFastlaneVer5;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestingFastlaneVer5.app/TestingFastlaneVer5";
@@ -523,8 +531,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XDZFDRJ434;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SKP2278HX7;
 				INFOPLIST_FILE = TestingFastlaneVer5UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -533,6 +541,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gumi.TestingFastlaneVer5UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TestingFastlaneVer5;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestingFastlaneVer5;
@@ -543,8 +552,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XDZFDRJ434;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SKP2278HX7;
 				INFOPLIST_FILE = TestingFastlaneVer5UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -553,6 +562,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gumi.TestingFastlaneVer5UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TestingFastlaneVer5;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TestingFastlaneVer5;
