@@ -27,7 +27,8 @@ desc "Firebase Distribution"
 	disable_automatic_code_signing(
   		path: "./TestingFastlaneVer5.xcodeproj",
 		team_id: "SKP2278HX7",
-		profile_name: 'TestingFastlaneVer5'
+		profile_name: 'TestingFastlaneVer5',
+		targets: ["TestingFastlaneVer5"]
 	)
 
      build_app(scheme: "TestingFastlaneVer5",
