@@ -24,6 +24,12 @@ platform :ios do
 
 desc "Firebase Distribution"
   lane :firebase_distribution do
+	sigh(
+		development: true,
+      		team_id: "SKP2278HX7",
+      		provisioning_name: "TestingFastlaneVer5"
+    	)	
+
 	disable_automatic_code_signing(
   		path: "./TestingFastlaneVer5.xcodeproj",
 		team_id: "SKP2278HX7",
@@ -31,17 +37,25 @@ desc "Firebase Distribution"
 		targets: ["TestingFastlaneVer5"]
 	)
 
-     build_app(scheme: "TestingFastlaneVer5",
-	workspace: "TestingFastlaneVer5.xcworkspace",
-	xcargs: "-allowProvisioningUpdates",
-             include_bitcode: true,
-             export_method: "development"
-    )
+     	build_app(scheme: "TestingFastlaneVer5",
+		workspace: "TestingFastlaneVer5.xcworkspace",
+		configuration: "Debug",
+		include_bitcode: true,
+		export_options: {
+        			method: "development",
+        			signingStyle: "manual",
+        			team: "SKP2278HX7",
+        			provisioningProfiles: {
+          			"com.gumi.TestingFastlaneVer5": "TestingFastlaneVer5"
+        			},
+        		signingCertificate: "iPhone Developer"
+      		}
+    	)
              
-     firebase_app_distribution(
-             app: "1:550321097015:ios:8a556c3763706d3223b2b2",
-             firebase_cli_token: "1//0eKKMr1vpMTMBCgYIARAAGA4SNwF-L9Iru-p1RJRlwSxFYJqlE4ddai9vVqou4zRLwPBOGqS87x4ZkeXwep_fzvkK1wQg5xtlow4",
-             testers: "vule@gumiviet.com",
-             release_notes: "Lots of amazing new features to test out!")
+     	firebase_app_distribution(
+             	app: "1:550321097015:ios:8a556c3763706d3223b2b2",
+             	firebase_cli_token: "1//0eKKMr1vpMTMBCgYIARAAGA4SNwF-L9Iru-p1RJRlwSxFYJqlE4ddai9vVqou4zRLwPBOGqS87x4ZkeXwep_fzvkK1wQg5xtlow4",
+             	testers: "vule@gumiviet.com",
+             	release_notes: "Lots of amazing new features to test out!")
   end
 end
