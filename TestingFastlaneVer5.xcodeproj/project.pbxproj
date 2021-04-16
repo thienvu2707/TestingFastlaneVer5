@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		25112AB676DB75FDF29BE974 /* Pods_TestingFastlaneVer5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF82CC33CB9E6BEF2B40AD4F /* Pods_TestingFastlaneVer5.framework */; };
+		722DD68926293F4700293FBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 722DD68826293F4700293FBE /* GoogleService-Info.plist */; };
 		725898BB261DAD13008BEE9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725898BA261DAD13008BEE9E /* AppDelegate.swift */; };
 		725898BD261DAD13008BEE9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725898BC261DAD13008BEE9E /* SceneDelegate.swift */; };
 		725898BF261DAD13008BEE9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725898BE261DAD13008BEE9E /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		61753CB84A3CEEC281B62EA7 /* Pods-TestingFastlaneVer5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestingFastlaneVer5.release.xcconfig"; path = "Target Support Files/Pods-TestingFastlaneVer5/Pods-TestingFastlaneVer5.release.xcconfig"; sourceTree = "<group>"; };
+		722DD68826293F4700293FBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		725898B7261DAD13008BEE9E /* TestingFastlaneVer5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingFastlaneVer5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		725898BA261DAD13008BEE9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		725898BC261DAD13008BEE9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				725898C0261DAD13008BEE9E /* Main.storyboard */,
 				725898C3261DAD14008BEE9E /* Assets.xcassets */,
 				725898C5261DAD14008BEE9E /* LaunchScreen.storyboard */,
+				722DD68826293F4700293FBE /* GoogleService-Info.plist */,
 				725898C8261DAD14008BEE9E /* Info.plist */,
 			);
 			path = TestingFastlaneVer5;
@@ -88,7 +91,6 @@
 				AB2B37683223F38A31A6D128 /* Pods-TestingFastlaneVer5.debug.xcconfig */,
 				61753CB84A3CEEC281B62EA7 /* Pods-TestingFastlaneVer5.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				725898C7261DAD14008BEE9E /* LaunchScreen.storyboard in Resources */,
+				722DD68926293F4700293FBE /* GoogleService-Info.plist in Resources */,
 				725898C4261DAD14008BEE9E /* Assets.xcassets in Resources */,
 				725898C2261DAD13008BEE9E /* Main.storyboard in Resources */,
 			);
